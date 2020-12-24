@@ -38,6 +38,6 @@ func handleCommand(cmd string) {
 }
 
 func usage() {
-	fmt.Fprintln(flag.CommandLine.Output(), "Usage of code-manager")
+	fmt.Fprintf(flag.CommandLine.Output(), "\nUsage of code-manager:\n")
 	flag.PrintDefaults()
 }
